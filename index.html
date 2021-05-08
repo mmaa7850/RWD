@@ -1,166 +1,172 @@
-
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="en">
 <head>
-    <title>Learing JavaScript</title>
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <style>
-        
-        :root{
-            
-            --bound;
-        }
-        
-        body{
-            
-            background-color: rgba(255,94,100,0.5);
-            color: #FF3864;
-            
-        }
-        
-        .bold{
-            
-            font-weight: bold;
-        }
-        
-        #box{
-            
-            width: var(--bound);
-            height: var(--bound);
-            background-color: red;
-            display: none;
-            position: relative;
-            
-        }
-        
-    
-    
-    </style>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>六角西餐廳</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/all.js"></script>
 </head>
-
 <body>
-    
-   <h1>考考您的反應!</h1>
-    
-    <p class="bold">反應時間:<span id="time">0</span>秒</p>
-    
-    <div id="box"></div>
-   
-    
-    
-    <script type="text/javascript">
+  <div class="wrap">
+    <div class="header">
+      <div class="container">
+        <h1><a href="#">六角西餐廳</a></h1>
+        <ul class="link">
+          <li><a href="#">特色</a></li>
+          <li><a href="#">主廚</a></li>
+          <li><a href="#">地圖</a></li>
+        </ul>
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <h2 class="for-pc">咬一口就無法忘懷的漢堡</h2>
+        <h2 class="for-mobile">咬一口<br>就無法忘懷的漢堡</h2>
+        <p>七夕絕對無法錯過的好滋味</p>
+        <p>六角大漢堡</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="container">
+        <h2>
+          客人總是在詢問
+          <br>
+          這麼好吃的秘訣是什麼
+        </h2>
+        <ul>
+          <li>
+            <img src="images/feature_1.png" alt="">
+            <h3>台灣本土蔬菜</h3>
+            <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer etelit eget elit facilisis tristique. Namvel iaculis mauris.</p>
+          </li>
+          <li>
+            <img src="images/feature_2.png" alt="">
+            <h3>專業米其林廚師</h3>
+            <p>Sed ullamcorper tellu erat, nonultrices sem tincidunt euismod. Fusce rhoncus porttitor velit, eubibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+          </li>
+          <li>
+            <img src="images/feature_3.png" alt="">
+            <h3>對於專業不能退讓</h3>
+            <p>Fusce rhoncus porttitor velit, eu bibendum nibh aliquet vel. Fusce lorem leo, vehicula at nibh quis, facilisis accumsan turpis.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="chef">
+      <div class="container">
+        <img src="images/main_chef_brown.png" alt="">
+        <div class="chefinfo">
+          <h2>
+            今日主廚：帕金森、梅在帕
+            
+            <span>Tody Chef: Plum in Shock</span>
+          </h2>
+          <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, cconsectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit ametligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="thought">
+      <div class="container">
+        <h3>聽聽別人的感想</h3>
+        <ul>
+          <li>
+            <img src="images/avatar_1.png" alt="">
+            <div>
+              <h4>高雄一口吃</h4>
+              <p>自從吃了這家餐廳以後，我口水連續了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+              <h5>--產品經理</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar_2.png" alt="">
+            <div>
+              <h4>廟口小霸王</h4>
+              <p>自從吃了這家餐廳以後，我口水連續了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+              <h5>--金身道士</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar_3.png" alt="">
+            <div>
+              <h4>春天也來了</h4>
+              <p>自從吃了這家餐廳以後，我口水連續了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+              <h5>--美麗萬分</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="map">
+      <div class="container">
+        <h3>
+          我們的位置不太夠
+          <br>
+          要不要先訂位呢？
+        </h3>
+        <div class="content">
+          <img src="images/Map.png" alt="">
+        <form>
+          <label for="name">姓名</label>
+          <input type="text" id="name" placeholder="六角講師吃尾牙">
+          <label for="tel">電話</label>
+          <input type="email" id="tel" placeholder="02-1234567">
+          <label for="email">信箱</label>
+          <input type="email" id="email" placeholder="test@gmail.com">
+          <label for="people">人數</label>
+          <input type="number" id="people">
+          <label for="veg">是否需要素食</label>
+          <div class="checkbox">
+            <label for="yes">是</label>
+            <input type="radio" id="yes" value="true" name="checkbox">
+            <label for="no">否</label>
+            <input type="radio" id="no" value="false" name="checkbox">
+          </div>
+          <div class="button">
+            <button class="cancel">取消</button>
+            <button class="send">送出</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="info">
+          <div class="about">
+            <h5>關於六角西餐廳</h5>
+            <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutapat augue enim, pulvinar lobortis nibh lacinia at.</p>
+          </div>
+          <div class="contact">
+            <h5>聯絡方式</h5>
+            <ul>
+              <li>高雄市中正五路到底</li>
+              <li>+886 886 886</li>
+              <li>service@hexschool.com</li>
+            </ul>
+          </div>
+        </div>
         
-        var createdTime;
-        var clickedTime;
-        var reachTime;
-        
-        
-        function getRandomColor(){
-            
-            var max = 200;
-            var min = 50;
-            
-            var green = Math.floor(Math.random() * (max - min + 1)) + min ;
-            
-            var color = "rgba(255, "+ green +", 100, 1.0)";
-            return color;
-            
-        }
-        
-        
-        
-        function makeBox(){
-            
-            var time = Math.random();
-            
-            time = time * 2000;
-            
-            setTimeout(function(){
-                
-                if(Math.random() >= 0.5 ){
-                    
-                    document.getElementById("box").style.borderRadius = "50%";
-                }
-                
-                else{
-                    
-                    document.getElementById("box").style.borderRadius = "0px";
-                }
-                
-                var min = 0;
-                var max = window.innerHeight - 280;
-                
-                var top = Math.floor(Math.random() * (max - min + 1)) + min;
-                
-           
-                
-                min = 0;
-                max = window.innerWidth - 140;
-                
-                
-                
-                var left = Math.floor(Math.random() * (max - min + 1)) + min;
-                
-                var  dynamanic;
-                
-                
-                if(window.innerWidth > window.innerHeight)
-                    {
-                        dynamanic = window.innerWidth / 8;
-//                        console.log("Width:" + window.innerWidth / 8);
-                    }
-                else{
-                        dynamanic = window.innerHeight / 8;
-//                        console.log("Height:" + window.innerHeight / 8);
-                }
-                
-                dynamanic = dynamanic + "px";
-                document.documentElement.style.setProperty("--bound", dynamanic);
-                
-                
-                
-                
-                
-            
-                
-//                console.log(window.innerWidth);
-//                console.log(window.innerHeight);
-//                
-//                console.log(document.documentElement.clientWidth);
-//                console.log(document.documentElement.clientHeight);
-                
-                document.getElementById("box").style.top = top + "px";
-                document.getElementById("box").style.left = left + "px";
-                
-                document.getElementById("box").style.backgroundColor = getRandomColor();
-                document.getElementById("box").style.display = "block";
-                createdTime = Date.now();
-            }
-                       
-                       , time)
-        }
-        
-        
-        
-        document.getElementById("box").onclick = function() {
-            
-            this.style.display = "none";
-            clickedTime = Date.now();
-            reachTime = (clickedTime - createdTime) / 1000;
-            document.getElementById("time").innerHTML = reachTime;
-            
-            
-            makeBox();
-            
-        }
-        
-        makeBox();
-        
-    </script>
-
+        <div class="website">
+          <h2>六角西餐廳</h2>
+          <ul class="footer-link">
+            <li>
+              <a href="https://www.google.com" target="_blank" class="fab fa-google-plus-square icon-google" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" class="fab fa-twitter-square icon-twitter" aria-hidden="true"></a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com" target="_blank" class="fab fa-facebook-square icon-facebook" aria-hidden="true"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
