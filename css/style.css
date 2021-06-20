@@ -85,7 +85,7 @@ a{
 }
 .header{
     background: rgba(0, 0, 0, 0.75);
-    z-index: 1000;
+    z-index: 9999;
     position: fixed;
     width: 100%;
 }
@@ -100,7 +100,7 @@ a{
 }
 .header .container h1 a{
     display: block;
-    background-image: url(../images/logo_w\(null\).svg);
+    background-image: url(../images/logo_s.png);
     width: 120px;
     height: 23px;
     text-indent: 101%;
@@ -152,18 +152,20 @@ a{
 }
 /*---------banner--------------*/
 .banner{
-    background: center url(../images/header_desktop.png);
+    background-image: url(../images/header.jpeg);
+    background-position: center center;
+    background-size: cover;
     height: 420px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* @media(max-width: 560px){
+@media(max-width: 560px){
     .banner{
-        background: center url(../images/header_mobile.png);
+        background-image: url(../images/header.jpeg);
     }
-} */
+}
 .banner .container{
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
@@ -180,6 +182,7 @@ a{
 }
 @media(max-width: 560px){
     .for-mobile{
+        font-size: 24px !important;
         display: block;
     }
     .for-pc{
@@ -252,41 +255,42 @@ a{
     padding-bottom: 11px;
 }
 
-/*-----------chef-------------*/
-.chef{
-    background-color: #3D1101;
+/*-----------mattress-------------*/
+.mattress{
+    background-color: #333E51;
     color: #fff;
 }
-.chef img{
+.mattress img{
     width: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
-.chef .container{
+.mattress .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px;
 }
 /* @media(max-width: 560px){
-    .chef .container{
+    .mattress .container{
         align-items: center;
     }
 } */
-.chefinfo{
+.mattressinfo{
     width: 40%;
     padding: 50px 25px ;
     
 }
-.chefinfo h2{
+.mattressinfo h2{
     font-size: 20px;
     color: EFE9E7;
     padding-bottom: 16px;
 }
-.chefinfo h2 span{
+.mattressinfo h2 span{
     display: block;
 }
 @media(max-width: 560px){
-    .chef .chefinfo, .chef img{
+    .mattress .mattressinfo, .mattress img{
         width: 100%;
     }
 }
@@ -346,7 +350,8 @@ a{
 }
 .map img{
     width: 50%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 @media(max-width: 560px){
     .map img{
@@ -375,16 +380,18 @@ a{
         width: 100%;
     }
 }
-.map label, .map input{
+.map label, .map input, .map select{
     margin-bottom: 10px;
 }
 .map input{
     padding: 5px;
 }
-.map .checkbox{
-    margin-bottom: 30px;
+.map select{
+    padding: 5px 0px;
 }
+
 .button{
+    margin-top: 30px;
     text-align: end;
 }
 .button button{
@@ -445,7 +452,7 @@ a{
 }
 .website h2{
     display: block;
-    background-image: url(../images/logo_l\(null\).svg);
+    background-image: url(../images/logo_l.png);
     width: 244px;
     height: 49px;
     text-indent: 101%;
@@ -525,7 +532,7 @@ a{
 }
 .order .nav a{
     color: #3D1101;
-    padding: 5px;
+    padding: 10px;
     display: block;
     border-bottom: 1px solid #3D1101;
 }
@@ -795,6 +802,16 @@ a{
     padding: 15px;
     box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
 }
+@media(max-width: 768px){
+    .register .form{
+        width: 500px;
+    }
+}
+@media(max-width: 560px){
+    .register .form{
+        width: 300px;
+    }
+}
 .register .form h3{
     font-size: 18px;
     text-align: center;
@@ -808,8 +825,18 @@ a{
     font-size: 18px;
     line-height: 1.4;
 }
+@media(max-width: 768px){
+    .register .content .terms{
+        width: 100%;
+    }
+}
 .register .content form{
     width: 50%;
+}
+@media(max-width: 768px){
+    .register .content form{
+        width: 100%;
+    }
 }
 .register .content .mail, .register .content .password, .register .content .passwordcheck{
     position: relative;
